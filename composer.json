@@ -1,0 +1,39 @@
+{
+    "name": "namig64/plp-mailerbundle",
+    "description": "Bundle to use Mailer services",
+    "type": "symfony-bundle",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "namig64",
+            "email": "namig.nurmamedov@yandex.ru"
+        }
+    ],
+    "require": {
+        "php": "^7.1.0",
+        "symfony/config": "^3.4 || ^4.0",
+        "symfony/dependency-injection": "^3.4 || ^4.0",
+        "symfony/http-kernel": "^3.4 || ^4.0",
+        "symfony/yaml": "^3.4",
+        "jms/serializer": "^1.13",
+        "doctrine/collections": "^1.5",
+        "mailerlite/mailerlite-api-v2-php-sdk": "^0.2.2",
+        "drewm/mailchimp-api": "^2.5"
+    },
+    "autoload": {
+        "psr-4": {
+            "Plp\\MailerBundle\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Plp\\MailerBundle\\Tests\\": "tests/"
+        }
+    },
+    "require-dev": {
+        "symfony/phpunit-bridge": "*",
+        "symfony/framework-bundle": "^3.4 || ^4.0",
+        "symfony/browser-kit": "^3.4 || ^4.0",
+        "phpunit/phpunit": "7"
+    }
+}
