@@ -5,8 +5,8 @@ services:
         autoconfigure: true # Automatically registers your services as commands, event subscribers, etc.
         public: false       # Allows optimizing the container by removing unused services; this also means
 
-    Plp\MailerBundle\Core\Business\:
-        resource: '../../../Core/Business/*'
+    Plp\MailerBundle\:
+            resource: '../../../{Core/{Business,Client},Service/{Business,Bo2So}}/*'
 
     Plp\MailerBundle\Service\Business\SubscriberService:
         public: true
